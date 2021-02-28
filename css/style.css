@@ -200,15 +200,13 @@ body{
     padding-left: 40px;
     padding-right: 40px;
     column-count: 7 ;
-    column-gap: 10px;
-    row-gap: 10px;
-    row-gap: 0px;
     margin-top: 90px;
+    align-items: center;
 }
 
 .item{
     position: relative;
-    width: 250px;
+    width: 230px;
     padding-bottom: 10px;
 }
 
@@ -239,7 +237,7 @@ body{
     background-color: rgb(212, 16, 16);
     width: 40px;
     top: 10px;
-    left: 180px;
+    left: 165px;
 }
 
 .item .link{
@@ -317,4 +315,101 @@ body{
     cursor: zoom-in;
 }
 
+
+
+.button-hover{
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 170px;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.button-hover .add-bg{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    align-items: center;
+}
+
+.button-hover .add{
+    position: relative;
+    top: 18px;
+    left: 17px;
+    width: 25px;
+    height: 25px;
+
+}
+
+.button-hover > div:hover{
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);
+
+}
+
+.button-hover .question-bg{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top:10px ;
+    border: 1px solid #ebebeb;
+}
+
+.button-hover .question{
+    position: relative;
+    top: 18px;
+    left: 17px;
+    width: 25px;
+    height: 25px;
+
+}
+
 /* -------------------------- BODY ENDS ------------------------------- */
+
+
+/* -------------------------- MEDIA QUERIES ------------------------------- */
+
+@media only screen and (min-width:0px) and (max-width:550px){
+    .grid{
+        column-count: 1;
+    }
+
+}
+
+@media only screen and (min-width:550px) and (max-width:800px){
+    .grid{
+        column-count: 2;
+    }
+
+}
+
+@media only screen and (min-width:800px) and (max-width:1200px){
+    .grid{
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width:1100px) and (max-width:1400px){
+    .grid{
+            column-count: 4;
+    }   
+}
+
+@media only screen and (min-width:1400px) and (max-width:1600px){
+    .grid{
+            column-count: 5;
+    }   
+}
+
+@media only screen and (min-width:1600px) and (max-width:1800px){
+    .grid{
+            column-count: 6;
+    }   
+}
