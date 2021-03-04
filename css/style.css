@@ -1,5 +1,4 @@
 /* -------------------------- NAVIGATION BAR STARTS ------------------------------- */
-
 .nav-bar{
     z-index: 9999;
     height: 70px;
@@ -28,12 +27,11 @@
     left: 10px;
     top: 20px;
 }
+
 .nav-bar .logo-bg:hover{
  cursor: pointer;
  background-color: rgb(238, 238, 238);
 }
-
-
 
 .nav-bar .home{
     background-color: black;
@@ -347,8 +345,6 @@ body{
     cursor: zoom-in;
 }
 
-
-
 .button-hover{
     position: fixed;
     z-index: 999;
@@ -406,7 +402,7 @@ body{
 /* -------------------------- BODY ENDS ------------------------------- */
 
 
-/* -------------------------- MEDIA QUERIES ------------------------------- */
+/* -------------------------- MEDIA QUERIES STARTS------------------------------- */
 
 @media only screen and (min-width:0px) and (max-width:550px){
     .grid{
@@ -480,3 +476,5 @@ body{
         width: 65%;
     }
 }
+
+/* -------------------------- MEDIA QUERIES ENDS------------------------------- */
